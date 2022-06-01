@@ -1,0 +1,28 @@
+{
+  "name": "bot007",
+  "version": "1.0.0",
+  "description": "telegram bot",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'",
+    "start": "ts-node ./src/app.ts"
+  },
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "author": "Artsiom Martynau",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.8.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  }
+}
